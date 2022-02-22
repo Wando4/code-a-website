@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <header>
+  <header role="banner">
       <nav="navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -16,23 +16,25 @@
         </ul>
       </nav>
   </header>
-  <section>
-    <h1>Berries</h1>
+
+  <main role="main">
+    <h1 id="berries">Berries</h1>
     <p>Berries, berries, oh my!</p>
     <p>In everyday English, “berry” is a term for any small edible fruit. These “berries” are usually juicy, round, brightly coloured, sweet or sour, and do not have a stone or pit, although many seeds may be present.</p>
-  </section>
-
-  <section>
-    <ul>
-      <li><a href="blueberries.html">Blueberries</a></li>
-      <li><a href="grapes.html">Grapes</a></li>
-      <li><a href="red-currants.html">Red-currants</a></li>
-      <li><a href="bananas.html">Bananas</a></li>
-    </ul>
-  </section>
+    <section>
+      <ul role="berries-details">
+        <nav>
+          <li><a href="blueberries.html" aria-label="Blueberries paage">Blueberries</a></li>
+          <li><a href="grapes.html" aria-label="Grapes page">Grapes</a></li>
+          <li><a href="red-currants.html" aria-label="Red-currants page">Red-currants</a></li>
+          <li><a href="bananas.html" aria-label="Bananas paage">Bananas</a></li>
+        </nav>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>© Berries</p>
+    <p role="contentinfo">© Berries</p>
   </footer>
 </body>
 </html>
